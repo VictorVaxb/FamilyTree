@@ -1,44 +1,36 @@
 window.onload = function () { 
-
-    var familyGroupTag = {
-        group: true,
-        template: "group"
-    };
     
-    var familyGroupTag3 = {
-        group: true,
-        template: "group3"
-    };
-    
-    OrgChart.templates.group.link = '<path stroke-linejoin="round" stroke="#aeaeae" stroke-width="1px" fill="none" d="M{xa},{ya} {xb},{yb} {xc},{yc} L{xd},{yd}"/>';
+    OrgChart.templates.group.link = 
+        '<path stroke-linejoin="round" stroke="#aeaeae" stroke-width="1px" fill="none" d="M{xa},{ya} {xb},{yb} {xc},{yc} L{xd},{yd}"/>';
     btnMinimize = 
-                '<svg fill="#aeaeae" x="410" y="17" height="24" width="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"' +
-                    'viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve">' +
-                   '<path d="M0,0v485h485V0H0z M455,455H30V30h425V455z"/>' +
-                   '<polygon points="311.683,349.411 205.12,242.5 311.683,135.589 290.435,114.411 162.762,242.5 290.435,370.589 	"/>' +     
-                '</svg>';
+        '<svg fill="#aeaeae" x="410" y="17" height="24" width="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"' +
+            'viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve">' +
+            '<path d="M0,0v485h485V0H0z M455,455H30V30h425V455z"/>' +
+            '<polygon points="311.683,349.411 205.12,242.5 311.683,135.589 290.435,114.411 162.762,242.5 290.435,370.589 	"/>' +     
+        '</svg>';
     btnMaximize = 
-                '<svg fill="#aeaeae" x="198" y="47" height="24" width="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"' +
-                    'viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve">' +
-                    '<path d="M0,0v485h485V0H0z M455,455H30V30h425V455z"/>' +
-                    '<polygon points="194.565,370.589 322.237,242.5 194.565,114.411 173.317,135.589 279.88,242.5 173.317,349.411 	"/>' +
-                '</svg>';
+        '<svg fill="#aeaeae" x="198" y="47" height="24" width="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"' +
+            'viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve">' +
+            '<path d="M0,0v485h485V0H0z M455,455H30V30h425V455z"/>' +
+            '<polygon points="194.565,370.589 322.237,242.5 194.565,114.411 173.317,135.589 279.88,242.5 173.317,349.411 	"/>' +
+        '</svg>';
     btnMinimize3 = 
-                '<svg fill="#aeaeae" x="630" y="17" height="24" width="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"' +
-                    'viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve">' +
-                   '<path d="M0,0v485h485V0H0z M455,455H30V30h425V455z"/>' +
-                   '<polygon points="311.683,349.411 205.12,242.5 311.683,135.589 290.435,114.411 162.762,242.5 290.435,370.589 	"/>' +     
-                '</svg>';      
+        '<svg fill="#aeaeae" x="630" y="17" height="24" width="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"' +
+            'viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve">' +
+            '<path d="M0,0v485h485V0H0z M455,455H30V30h425V455z"/>' +
+            '<polygon points="311.683,349.411 205.12,242.5 311.683,135.589 290.435,114.411 162.762,242.5 290.435,370.589 	"/>' +     
+        '</svg>';      
                 
-            OrgChart.templates.group.min = Object.assign({}, OrgChart.templates.group);
-            OrgChart.templates.group.min.name = '<text data-width="230" data-text-overflow="multiline" style="font-size: 24px;" fill="#aeaeae" x="125" y="65" text-anchor="middle">{val}</text>';
-            OrgChart.templates.group.minBtn = btnMinimize +
-                '<rect data-btn-min="{val}" x="410" y="17" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
-            OrgChart.templates.group3 = Object.assign({}, OrgChart.templates.group);
-            OrgChart.templates.group3.minBtn = btnMinimize3 +
-                '<rect data-btn-min="{val}" x="630" y="17" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
-            OrgChart.templates.group.min.maxBtn = btnMaximize +
-                '<rect data-btn-max="{val}" x="198" y="47" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
+        OrgChart.templates.group.min = Object.assign({}, OrgChart.templates.group);
+        OrgChart.templates.group.min.name = 
+            '<text data-width="230" data-text-overflow="multiline" style="font-size: 24px;" fill="#aeaeae" x="125" y="65" text-anchor="middle">{val}</text>';
+        OrgChart.templates.group.minBtn = btnMinimize +
+            '<rect data-btn-min="{val}" x="410" y="17" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
+        OrgChart.templates.group3 = Object.assign({}, OrgChart.templates.group);
+        OrgChart.templates.group3.minBtn = btnMinimize3 +
+            '<rect data-btn-min="{val}" x="630" y="17" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
+        OrgChart.templates.group.min.maxBtn = btnMaximize +
+            '<rect data-btn-max="{val}" x="198" y="47" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
     
     var chart = new OrgChart(document.getElementById("tree"), {
         template: "diva",
@@ -51,20 +43,9 @@ window.onload = function () {
             minBtn: "id",
             maxBtn: "id",
         },
-        /* 
-        tags: {
-            f1: familyGroupTag,
-            f2: familyGroupTag,
-            f3: familyGroupTag3,
-            f4: familyGroupTag
-        },
-        */
     });
     
     nodes = [
-            // Papa de papi: Federico Del Carmen Martinez
-            // Mama de papi: Rosa Amelia Rojas
-
             { id: 1, name: "Federico Del Carmen Martinez", img: "pics/man.jpg" },
             { id: 2, pid: 1, name: "Rosa Amelia Rojas", img: "pics/woman.jpg", tags: ['partner'] },
 
@@ -90,13 +71,13 @@ window.onload = function () {
             { id: 38, pid: 16, name: "Chocolo", img: "pics/man.jpg", tags: ['partner'] },
             { id: 39, pid: 16, name: "Lautaro Morales", img: "pics/man.jpg", tags: ['partner'] },
 
-            { id: 50, pid: 10, ppid: 30, name: "Paola ...", img: "pics/woman.jpg" },
+            { id: 50, pid: 10, ppid: 30, name: "Paola", img: "pics/paola.png" },
             { id: 51, pid: 10, ppid: 31, name: "Ximena Zalazar Martinez", img: "pics/woman.jpg" },
             { id: 52, pid: 10, ppid: 31, name: "Alejandro Zalazar Martinez", img: "pics/man.jpg" },
             
             { id: 60, pid: 11, ppid: 32, name: "Raul Maldonado Martinez", img: "pics/raulmaldonado.png" },
             { id: 61, pid: 11, ppid: 32, name: "Flavia Maldonado Martinez", img: "pics/flaviamaldonado.png" },
-            { id: 62, pid: 11, ppid: 32, name: "Joselo Maldonado Martinez", img: "pics/man.jpg" },
+            { id: 62, pid: 11, ppid: 32, name: "Jose Maldonado Martinez", img: "pics/josemaldonado.png" },
 
             { id: 70, pid: 11, ppid: 33, name: "Yenny Miriam Peñaloza Martinez", fecnac:"10 Febrero 1972", img: "pics/yennypenaloza.png" },
             { id: 71, pid: 11, ppid: 33, name: "Victor Hugo Peñaloza Martinez", fecnac:"14 Agosto 1981", img: "pics/victorpenaloza.png" },
@@ -104,7 +85,7 @@ window.onload = function () {
 
             { id: 80, pid: 12, ppid: 34, name: "Cristian Martinez", img: "pics/man.jpg" },
             { id: 81, pid: 12, ppid: 34, name: "Romina Martinez", img: "pics/woman.jpg" },
-            { id: 82, pid: 12, ppid: 34, name: "Frederick Martinez", img: "pics/man.jpg" },
+            { id: 82, pid: 12, ppid: 34, name: "Frederick Martinez", img: "pics/frederickmartinez.png" },
 
             { id: 90, pid: 14, ppid: 35, name: "Victor Mario Tapia Martinez", img: "pics/mariotapia.png" },
             { id: 91, pid: 14, ppid: 36, name: "Magaly Yamilet Tapia Martinez", img: "pics/magalytapia.png" },
@@ -130,8 +111,8 @@ window.onload = function () {
             { id: 209, pid: 61, name: "Papa Paolo", img: "pics/man.jpg", tags: ['partner'] },
             { id: 210, pid: 62, name: "Miriam Ordenes", img: "pics/miriamordenes.png", tags: ['partner'] },
             { id: 211, pid: 80, name: "Pamela", img: "pics/woman.jpg", tags: ['partner'] },
-            { id: 212, pid: 81, name: "Jorge Pedrero", img: "pics/man.jpg", tags: ['partner'] },
-            { id: 213, pid: 82, name: "Sra Freddy", img: "pics/woman.jpg", tags: ['partner'] },
+            { id: 212, pid: 81, name: "Jorge Pedrero", img: "pics/jorgepedrero.png", tags: ['partner'] },
+            { id: 213, pid: 82, name: "Sra Freddy", img: "pics/srafreddy.png", tags: ['partner'] },
             { id: 214, pid: 91, name: "Patricio Gonzalez", img: "pics/patriciogonzalez.png", tags: ['partner'] },
             { id: 215, pid: 92, name: "Christian Medel Aliaga", img: "pics/man.jpg", tags: ['partner'] },
             { id: 216, pid: 92, name: "Cristian Hernandez", img: "pics/man.jpg", tags: ['partner'] },
@@ -162,7 +143,7 @@ window.onload = function () {
             { id: 361, pid: 61, ppid: 208, name: "Camila ...", img: "pics/camila.png" },
             { id: 362, pid: 61, ppid: 209, name: "Paolo ...", img: "pics/paolo.png" },
 
-            { id: 370, pid: 62, ppid: 210, name: "Alexis Maldonado", img: "pics/man.jpg" },
+            { id: 370, pid: 62, ppid: 210, name: "Alexis Maldonado", img: "pics/alexismaldonado.png" },
             { id: 371, pid: 62, ppid: 210, name: "Joselyn Maldonado", img: "pics/joselynmaldonado.png" },
 
             { id: 380, pid: 80, ppid: 211, name: "Hijos Cristian...", img: "pics/woman.jpg" },
@@ -172,7 +153,7 @@ window.onload = function () {
 
             { id: 400, pid: 82, ppid: 213, name: "Hija Freddy", img: "pics/woman.jpg" },
 
-            { id: 410, pid: 91, ppid: 214, name: "Andres Gonzalez", img: "pics/man.jpg" },
+            { id: 410, pid: 91, ppid: 214, name: "Andres Gonzalez", img: "pics/andresgonzalez.png" },
             { id: 411, pid: 91, ppid: 214, name: "Pablo Gonzalez", img: "pics/pablogonzalez.png" },
 
             { id: 420, pid: 92, ppid: 215, name: "Claudio Medel Tapia", img: "pics/claudiomedel.png" },
