@@ -49,10 +49,10 @@ window.onload = function () {
             { id: 1, name: "Federico Del Carmen Martinez", img: "pics/man.jpg" },
             { id: 2, pid: 1, name: "Rosa Amelia Rojas", img: "pics/woman.jpg", tags: ['partner'] },
 
-            { id: 5, pid: 1, ppid: 2, name: "Fermin Del Carmen Martinez Rojas", title: "Papi", img: "pics/man.jpg", fecnac: "28 Julio 1913" },
+            { id: 5, pid: 1, ppid: 2, name: "Fermin Del Carmen Martinez Rojas", title: "Papi", img: "pics/ferminmartinez.png", fecnac: "28 Julio 1913" },
             { id: 6, pid: 5, name: "Raquel De Las Mercedes Bustamante Martinez", title: "Mami", img: "pics/raquelbustamante.png", tags: ['partner'] },
-            
-            { id: 10, pid: 5, ppid: 6, name: "Teresa Martinez Bustamante", title: "Tere", img: "pics/woman.jpg" },
+
+            { id: 10, pid: 5, ppid: 6, name: "Teresa Martinez Bustamante", title: "Tere", img: "pics/teresamartinez.png" },
             { id: 11, pid: 5, ppid: 6, name: "Luisa Ines Martinez Bustamante", fecnac: "16 Diciembre 1945", img: "pics/luisamartinez.png" },
             { id: 12, pid: 5, ppid: 6, name: "Hugo Martinez Bustamante", title: "Chito", img: "pics/hugomartinez.png" },
             { id: 13, pid: 5, ppid: 6, name: "Moncho Martinez Bustamante", title: "Moncho", img: "pics/man.jpg" },
@@ -69,7 +69,7 @@ window.onload = function () {
             { id: 36, pid: 14, name: "Jose Nivaldo Tapia", title: "Caluga", img: "pics/nivaldotapia.png", tags: ['partner'] },
             { id: 37, pid: 15, name: "Flor Aravena", img: "pics/woman.jpg", tags: ['partner'] },
             { id: 38, pid: 16, name: "Chocolo", img: "pics/man.jpg", tags: ['partner'] },
-            { id: 39, pid: 16, name: "Lautaro Morales", img: "pics/man.jpg", tags: ['partner'] },
+            { id: 39, pid: 16, name: "Lautaro Morales", img: "pics/lautaromorales.png", tags: ['partner'] },
 
             { id: 50, pid: 10, ppid: 30, name: "Paola", img: "pics/paola.png" },
             { id: 51, pid: 10, ppid: 31, name: "Ximena Zalazar Martinez", img: "pics/woman.jpg" },
@@ -160,13 +160,13 @@ window.onload = function () {
             { id: 421, pid: 92, ppid: 216, name: "Martin Hernandez Tapia", img: "pics/martinhernandez.png" },
             { id: 422, pid: 92, ppid: 216, name: "Emilia Hernandez Tapia", img: "pics/woman.jpg" },
 
-            { id: 430, pid: 94, ppid: 217, name: "Josefa Tapia Ludueña", img: "pics/woman.jpg" },
+            { id: 430, pid: 94, ppid: 217, name: "Josefa Tapia Ludueña", img: "pics/josefatapia.png" },
             { id: 431, pid: 94, ppid: 217, name: "Sebastian Tapia Ludueña", img: "pics/sebastiantapia.png" },
 
             { id: 440, pid: 110, ppid: 219, name: "Gonzalo Martinez Ramirez", img: "pics/gonzalomartinez.png" },
             { id: 441, pid: 110, ppid: 219, name: "Daniela Martinez Ramirez", img: "pics/danielamartinez.png" },
             { id: 442, pid: 110, ppid: 219, name: "Javier Martinez Ramirez", img: "pics/javiermartinez.png" },
-            { id: 443, pid: 110, ppid: 219, name: "Agustin Martinez Ramirez", img: "pics/man.jpg" },
+            { id: 443, pid: 110, ppid: 219, name: "Agustin Martinez Ramirez", img: "pics/agustinmartinez.png" },
 
             { id: 450, pid: 90, ppid: 218, name: "Catalina Tapia", img: "pics/catalinatapia.png" },
             { id: 451, pid: 90, ppid: 218, name: "Antonia Tapia", img: "pics/antoniatapia.png" },
